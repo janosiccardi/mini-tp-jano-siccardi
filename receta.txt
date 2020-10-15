@@ -10,9 +10,9 @@ Funciones de tareas:
 Estas funciones reciben el puntero con la informacion del equipo, crean un char *accion con la palabra correspondiente, luego verifican si su semaforo correspondiente esta habilitado, simulan la tarea que debe realizar el equipo con “usleep” y  llaman a la funcion imprimirAccion() con dicha accion y la informacion del equipo. 
 cortar():  Simula la accion de cortar la cebolla, el ajo y el perejil y al finalizar hace un signal al semaforo que habilita la accion mezclar. 
 preparar(): Simula la accion de cortar el tomate y preparar la lechuga y al finalizar hace un signal al semaforo “lechugaYtomate” que indica que estan listos para colocarse. 
-hornear(): Comprueba que el horno este libre (mutex), simula la accion de hornear los panes y hace un signal al  semaforo “panListo” que indica que los panes estan listos. 
+*hornear():* Comprueba que el horno este libre (mutex), simula la accion de hornear los panes y hace un signal al  semaforo “panListo” que indica que los panes estan listos. 
 mezclar(): Verifica el semaforo mezclar, simula la accion de mezclar lo previamente cortado junto con la carne picada y habilita con un signal el semaforo salar. 
-Jano Siccardi 
+
 salar(): Verifica su semaforo y si el salero (mutex) esta en uso, simula la accion de salar la mezcla y por ultimo libera el salero(mutex) y habilita el semaforo armarMedallones con un signal. 
 armar(): Comprueba que este habilitado su semaforo, simula la accion de armar los medallones y por ultimo hace un signal al semaforo que habilita la accion cocinar. 
 cocinar(): Bloquea el mutex de plancha si esta estaba libre, verifica si el semaforo cocinar esta habilitado, simula la accion de cocinar los dos medallones y al finalizar hace un signal al semaforo que indica que los medallones estan listos. 
