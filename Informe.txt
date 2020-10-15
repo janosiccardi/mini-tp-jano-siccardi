@@ -1,9 +1,9 @@
-# Sistemas Operativos y Redes
-## Trabajo Práctico de hilos y semáforos
+# Sistemas Operativos y Redes  
+## Trabajo Práctico de hilos y semáforos  
 
 En este trabajo se debia realizar un programa, utilizando hilos y semaforos, que simule una competencia donde tres equipos deben realizar dos hamburguesas y el primero en hacerlo gana.  Los equipos debian leer la receta desde un archivo y guardar la salida en otro. Para esto se creo un struct paso, un struct semaforos , un struct parametro y tres hilos donde cada uno simula un equipo y se le asigno su struct parametro los semaforos, el numero de equipo, los pasos a realizar y el archivo donde se registra la salida. 
  
-###### Funciones: 
+###### Funciones:   
 
 **main():**  En esta funcion, por un lado se crean y se inician  los mutex e hilos y se le asigna a cada hilo su struct con un puntero del archivo donde se debe registrar la competencia y el numero de equipo correspondiente. Por otro lado aqui tambien se imprime al inicio un cartel que informa que la competencia comenzo y al finalizar  imprime quien fue el ganador. 
  
