@@ -137,13 +137,13 @@ p(s_lechugaYtomate)
  
 | izquierda |  centro |  derecha | izquierda |  centro | derecha | Alineado a la izquierda | Alineado en el centro | 
 | :---         |     :---:      |          ---: | :---         |     :---:      |          ---: | :---         |    :---:|      
-| git status   | git status     | git status    | git status   | git status     | git status    | git status   | gittatu |
-| git diff     | git diff       | git diff      | git status   | git status     | git status    | git status   | gittatu |
-| git status   | git status     | git status    | git status   | git status     | git status    | git status   | gittatu |
-| git diff     | git diff       | git diff      | git status   | git status     | git status    | git status   | gittatu |
-| git status   | git status     | git status    | git status   | git status     | git status    | git status   | gittatu |
-| git diff     | git diff       | git diff      | git status   | git status     | git status    | git status   | gittatu |
-| git status   | git status     | git status    | git status   | git status     | git status    | git status   | gittatu |
+| s_lechugaYtomate   |     0    |   1   |   1   |    1   |    1    |   1   |   1   |   1   |   1   |   1   |     1    |
+| s_panListo        |     0    |   0   |   1   |    1   |    1    |   1   |   1   |   1   |    1  |   1   |     1    |
+| s_mezclar         |     0    |   0   |   0   |    1   |    0    |   0   |   0   |   0   |    0  |   0   |     0    |
+| s_salar           |     0    |   0   |   0   |    0   |    1    |   1   |   0   |   0   |    0  |   0   |     0    | 
+| s_armarMedallones |     0    |   0   |   0   |    0   |    0    |   0   |   1   |   0   |    0  |   0   |     0    |
+| s_cocinar         |     0    |   0   |   0   |    0   |    0    |   0   |   0   |   1   |    1  |   0   |     0    |
+| s_medallonesListos|     0    |   0   |   0   |    0   |    0    |   0   |   0   |   0   |    0  |   1   |     1    |
 | git diff     | git diff       | git diff      | git status   | git status     | git status    | git status   | gittatu |
 | git status   | git status     | git status    | git status   | git status     | git status    | git status   | gittatu |
 | git diff     | git diff       | git diff      | git status   | git status     | git status    | git status   | gittatu |
