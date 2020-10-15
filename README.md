@@ -69,15 +69,15 @@ p(s_lechugaYtomate)
  
  
 
-| semaforos | preparar | horenar | cortar | mezclar | salar | armar | cocinar | terminar | 
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| s_lechugaYtomate   |     0    |   1   |   1   |    1   |    1    |   1   |   1   |   1   |   1   |   1   |     1    |
-| s_panListo         |     0    |   0   |   1   |    1   |    1    |   1   |   1   |   1   |    1  |   1   |     1    |
-| s_mezclar          |     0    |   0   |   0   |    1   |    0    |   0   |   0   |   0   |    0  |   0   |     0    |
-| s_salar            |     0    |   0   |   0   |    0   |    1    |   1   |   0   |   0   |    0  |   0   |     0    | 
-| s_armarMedallones  |     0    |   0   |   0   |    0   |    0    |   0   |   1   |   0   |    0  |   0   |     0    |
-| s_cocinar          |     0    |   0   |   0   |    0   |    0    |   0   |   0   |   1   |    1  |   0   |     0    |
+semaforos | preparar | horenar | cortar | mezclar | salar | armar | cocinar | terminar |
+----------------------------------------------------------------------------------------
+s_lechugaYtomate   |     0    |   1   |   1   |    1   |    1    |   1   |   1   |   1   |   1   |   1   |     1    |
+s_panListo         |     0    |   0   |   1   |    1   |    1    |   1   |   1   |   1   |    1  |   1   |     1    |
+s_mezclar          |     0    |   0   |   0   |    1   |    0    |   0   |   0   |   0   |    0  |   0   |     0    |
+s_salar            |     0    |   0   |   0   |    0   |    1    |   1   |   0   |   0   |    0  |   0   |     0    | 
+s_armarMedallones  |     0    |   0   |   0   |    0   |    0    |   0   |   1   |   0   |    0  |   0   |     0    |
+s_cocinar          |     0    |   0   |   0   |    0   |    0    |   0   |   0   |   1   |    1  |   0   |     0    |
 s_medallonesListos|     0    |   0   |   0   |    0   |    0    |   0   |   0   |   0   |    0  |   1   |     1    |
-mutex_horno        |     1    |   0   |   1   |    1   |    1    |   1   |   1   |   1   |    1  |   1   |     1    |
-mutex_salero       |     1    |   1   |   1   |    1   |    1    |   0   |   1   |   1   |    1  |   1   |     1    |
-mutex_plancha      |     1    |   1   |   1   |    1   |    1    |   1   |   1   |   1   |    0  |   1   |     1    |
+mutex_horno       |    1    |   0   |   1   |    1   |    1    |   1   |   1   |   1   |    1  |   1   |     1    |
+mutex_salero      |     1    |   1   |   1   |    1   |    1    |   0   |   1   |   1   |    1  |   1   |     1    |
+mutex_plancha     |     1    |   1   |   1   |    1   |    1    |   1   |   1   |   1   |    0  |   1   |     1    |
