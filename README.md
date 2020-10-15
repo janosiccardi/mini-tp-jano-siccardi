@@ -135,7 +135,7 @@ p(s_lechugaYtomate)
     terminar()  
  
  
-| Alineado a la izquierda | Alineado en el centro | Alineado a la derecha |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
+| izquierda |  centro |  derecha | izquierda |  centro | derecha | Alineado a la izquierda | Alineado en el centro | 
+| :---         |     :---:      |          ---: | :---         |     :---:      |          ---: | :---         |    :---:|      
+| git status   | git status     | git status    | git status   | git status     | git status    | git status   | gittatu |
+| git diff     | git diff       | git diff      | git status   | git status     | git status    | git status   | gittatu |
