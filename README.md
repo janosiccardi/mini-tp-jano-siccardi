@@ -135,8 +135,8 @@ p(s_lechugaYtomate)
     terminar()  
  
  
-| izquierda |  centro |  derecha | izquierda |  centro | derecha | Alineado a la izquierda | Alineado en el centro | 
-|    :---:     |    :---:     |    :---:     |    :---:     |    :---:      |     :---:      |     :---:      |    :---:|      
+| SEMAFOROS | preparar() | hornear() | hornear() | cortar() | mezclar() | salar() | salar() | armar()| cocinar()| cocinar() | terminar() | 
+|    :---:     |    :---:     |    :---:     |    :---:     |    :---:     |    :---:     |    :---:     |    :---:     |    :---:      |     :---:      |     :---:      |    :---:|      
 | s_lechugaYtomate   |     0    |   1   |   1   |    1   |    1    |   1   |   1   |   1   |   1   |   1   |     1    |
 | s_panListo        |     0    |   0   |   1   |    1   |    1    |   1   |   1   |   1   |    1  |   1   |     1    |
 | s_mezclar         |     0    |   0   |   0   |    1   |    0    |   0   |   0   |   0   |    0  |   0   |     0    |
