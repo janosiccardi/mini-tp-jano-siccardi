@@ -136,7 +136,7 @@ p(s_lechugaYtomate)
  
  
 | izquierda |  centro |  derecha | izquierda |  centro | derecha | Alineado a la izquierda | Alineado en el centro | 
-| :---         |     :---:      |          ---: | :---         |     :---:      |          ---: | :---         |    :---:|      
+|    :---:     |    :---:     |    :---:     |    :---:     |    :---:      |     :---:      |     :---:      |    :---:|      
 | s_lechugaYtomate   |     0    |   1   |   1   |    1   |    1    |   1   |   1   |   1   |   1   |   1   |     1    |
 | s_panListo        |     0    |   0   |   1   |    1   |    1    |   1   |   1   |   1   |    1  |   1   |     1    |
 | s_mezclar         |     0    |   0   |   0   |    1   |    0    |   0   |   0   |   0   |    0  |   0   |     0    |
@@ -144,6 +144,6 @@ p(s_lechugaYtomate)
 | s_armarMedallones |     0    |   0   |   0   |    0   |    0    |   0   |   1   |   0   |    0  |   0   |     0    |
 | s_cocinar         |     0    |   0   |   0   |    0   |    0    |   0   |   0   |   1   |    1  |   0   |     0    |
 | s_medallonesListos|     0    |   0   |   0   |    0   |    0    |   0   |   0   |   0   |    0  |   1   |     1    |
-| git diff     | git diff       | git diff      | git status   | git status     | git status    | git status   | gittatu |
-| git status   | git status     | git status    | git status   | git status     | git status    | git status   | gittatu |
-| git diff     | git diff       | git diff      | git status   | git status     | git status    | git status   | gittatu |
+| mutex_horno       |     1    |   0   |   1   |    1   |    1    |   1   |   1   |   1   |    1  |   1   |     1    |
+| mutex_salero      |     1    |   1   |   1   |    1   |    1    |   0   |   1   |   1   |    1  |   1   |     1    |
+| mutex_plancha     |     1    |   1   |   1   |    1   |    1    |   1   |   1   |   1   |    0  |   1   |     1    |
