@@ -69,7 +69,7 @@ p(s_lechugaYtomate)
  
  
 
-|    semaforos    | preparar() |   horenar()   | cortar() | mezclar() |    salar()    | armar() |  cocinar() | terminar() | 
+|    semaforos    | preparar |   horenar   | cortar | mezclar |    salar    | armar |  cocinar | terminar | 
 | :---:  |   :---:  |  :---:  | :---:  |  :---:  | :---:  | :---:  | :---:  | :---:   |  :---:  |  :---:  | :---:  |
 | s_lechugaYtomate   |     0    |   1   |   1   |    1   |    1    |   1   |   1   |   1   |   1   |   1   |     1    |
 | s_panListo         |     0    |   0   |   1   |    1   |    1    |   1   |   1   |   1   |    1  |   1   |     1    |
