@@ -33,7 +33,7 @@ Estas funciones reciben el puntero con la informacion del equipo, crean un char 
 
 
 
-![](/Sincronizaciondetareas.png)
+![](Sincronizaciondetareas.png)
  
 | SEMAFOROS | preparar() | hornear() | hornear() | cortar() | mezclar() | salar() | salar() | armar()| cocinar()| cocinar() | terminar() | 
 |    :---:     |    :---:     |    :---:     |    :---:     |    :---:     |    :---:     |    :---:     |    :---:     |    :---:      |     :---:      |     :---:      |    :---:|      
