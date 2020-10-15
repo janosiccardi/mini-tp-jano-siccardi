@@ -135,9 +135,7 @@ p(s_lechugaYtomate)
     terminar()  
  
  
- 
-
-| Nombre     | Símbolo |
-| ---      | ---       |
-| Comilla simple | `         |
-| Barra vertical | \|        |
+| Alineado a la izquierda | Alineado en el centro | Alineado a la derecha |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
