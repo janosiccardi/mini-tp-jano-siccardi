@@ -3,7 +3,7 @@
 
 En este trabajo se debia realizar un programa, utilizando hilos y semaforos, que simule una competencia donde tres equipos deben realizar dos hamburguesas y el primero en hacerlo gana.  Los equipos debian leer la receta desde un archivo y guardar la salida en otro. Para esto se creo un struct paso, un struct semaforos , un struct parametro y tres hilos donde cada uno simula un equipo y se le asigno su struct parametro los semaforos, el numero de equipo, los pasos a realizar y el archivo donde se registra la salida. 
  
-###### Funciones:   
+**FUNCIONES:**   
 
 **main():**  En esta funcion, por un lado se crean y se inician  los mutex e hilos y se le asigna a cada hilo su struct con un puntero del archivo donde se debe registrar la competencia y el numero de equipo correspondiente. Por otro lado aqui tambien se imprime al inicio un cartel que informa que la competencia comenzo y al finalizar  imprime quien fue el ganador. 
  
@@ -11,7 +11,7 @@ En este trabajo se debia realizar un programa, utilizando hilos y semaforos, que
 
 **ejecutarReceta():** Esta funcion recibe el puntero al struct parametro de el equipo(hilo) que la esta ejecutando, lee la receta y agrega las acciones e ingredientes al arreglo de pasos de cada equipo. Luego crea e inicializa los hilos que van a ejecutar las tareas y sus semaforos correspondientes. Y llama a cada una de las funciones de tareas. 
 
-###### Funciones de tareas:
+**FUNCIONES DE TAREAS:**
 
 Estas funciones reciben el puntero con la informacion del equipo, crean un char *accion con la palabra correspondiente, luego verifican si su semaforo correspondiente esta habilitado, simulan la tarea que debe realizar el equipo con “usleep” y  llaman a la funcion imprimirAccion() con dicha accion y la informacion del equipo. 
 
@@ -69,15 +69,15 @@ p(s_lechugaYtomate)
  
  
 
-|    semaforos     |preparar()|   horenar()   |cortar()|mezclar()|    salar()    |armar()|    cocinar()  |terminar()| 
+|    semaforos    | preparar() |   horenar()   | cortar() | mezclar() |    salar()    | armar() |  cocinar() | terminar() | 
 | :---:  |   :---:  |  :---:  | :---:  |  :---:  | :---:  | :---:  | :---:  | :---:   |  :---:  |  :---:  | :---:  |
-|s_lechugaYtomate  |     0    |   1   |   1   |    1   |    1    |   1   |   1   |   1   |   1   |   1   |     1    |
-|s_panListo        |     0    |   0   |   1   |    1   |    1    |   1   |   1   |   1   |    1  |   1   |     1    |
-|s_mezclar         |     0    |   0   |   0   |    1   |    0    |   0   |   0   |   0   |    0  |   0   |     0    |
-|s_salar           |     0    |   0   |   0   |    0   |    1    |   1   |   0   |   0   |    0  |   0   |     0    | 
-|s_armarMedallones |     0    |   0   |   0   |    0   |    0    |   0   |   1   |   0   |    0  |   0   |     0    |
-|s_cocinar         |     0    |   0   |   0   |    0   |    0    |   0   |   0   |   1   |    1  |   0   |     0    |
-|s_medallonesListos|     0    |   0   |   0   |    0   |    0    |   0   |   0   |   0   |    0  |   1   |     1    |
-|mutex_horno       |     1    |   0   |   1   |    1   |    1    |   1   |   1   |   1   |    1  |   1   |     1    |
-|mutex_salero      |     1    |   1   |   1   |    1   |    1    |   0   |   1   |   1   |    1  |   1   |     1    |
-|mutex_plancha     |     1    |   1   |   1   |    1   |    1    |   1   |   1   |   1   |    0  |   1   |     1    |
+| s_lechugaYtomate   |     0    |   1   |   1   |    1   |    1    |   1   |   1   |   1   |   1   |   1   |     1    |
+| s_panListo         |     0    |   0   |   1   |    1   |    1    |   1   |   1   |   1   |    1  |   1   |     1    |
+| s_mezclar          |     0    |   0   |   0   |    1   |    0    |   0   |   0   |   0   |    0  |   0   |     0    |
+| s_salar            |     0    |   0   |   0   |    0   |    1    |   1   |   0   |   0   |    0  |   0   |     0    | 
+| s_armarMedallones  |     0    |   0   |   0   |    0   |    0    |   0   |   1   |   0   |    0  |   0   |     0    |
+| s_cocinar          |     0    |   0   |   0   |    0   |    0    |   0   |   0   |   1   |    1  |   0   |     0    |
+| s_medallonesListos |     0    |   0   |   0   |    0   |    0    |   0   |   0   |   0   |    0  |   1   |     1    |
+| mutex_horno        |     1    |   0   |   1   |    1   |    1    |   1   |   1   |   1   |    1  |   1   |     1    |
+| mutex_salero       |     1    |   1   |   1   |    1   |    1    |   0   |   1   |   1   |    1  |   1   |     1    |
+| mutex_plancha      |     1    |   1   |   1   |    1   |    1    |   1   |   1   |   1   |    0  |   1   |     1    |
