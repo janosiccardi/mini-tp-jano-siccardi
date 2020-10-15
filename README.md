@@ -32,41 +32,8 @@ Estas funciones reciben el puntero con la informacion del equipo, crean un char 
 **terminar():** Verifica que los medallones, los panes, la lechuga y el tomate esten listos, comprobando que esten habilitados sus dichos semaforos, simula la accion de armar las hamburguesas, y verifica si este equipo es el primero en terminar para guardar su numero de equipo en la variable “ganador”. 
 
 
-###### Sincronizacion de tareas y Prueba de escritorio: 
 
- cortar()              preparar()               mutex(horno) 
- V(s_mezclar)     V(s_lechugaYtomate)             hornear()        
-                                                V(s_panListo)
- p(s_mezclar)                                    mutex(horno)
-   mezclar() 
-  V(s_salar) 
- 
- 
- p(s_salar) 
-mutex(salero) 
-  salar() 
-V(s_armarMedallones) 
- mutex(salero) 
- 
- 
-p(s_armarMedallones)   
-    armar() 
-  V(s_cocinar) 
- 
- 
- p(s_cocinar) 
-mutex(plancha) 
-   cocinar() 
-V(s_medallonesListos)  
- mutex(plancha) 
- 
- 
-p(s_medallonesListos) 
-  p(s_panListo) 
-p(s_lechugaYtomate) 
-    terminar() 
- 
-
+![](/Sincronizaciondetareas.jpg)
  
 | SEMAFOROS | preparar() | hornear() | hornear() | cortar() | mezclar() | salar() | salar() | armar()| cocinar()| cocinar() | terminar() | 
 |    :---:     |    :---:     |    :---:     |    :---:     |    :---:     |    :---:     |    :---:     |    :---:     |    :---:      |     :---:      |     :---:      |    :---:|      
