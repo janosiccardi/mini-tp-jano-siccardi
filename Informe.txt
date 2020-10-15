@@ -34,13 +34,23 @@ Estas funciones reciben el puntero con la informacion del equipo, crean un char 
 
 ###### Sincronizacion de tareas y Prueba de escritorio: 
 
- cortar()                                                            preparar()                  mutex(horno) V(s_mezclar)  V(s_lechugaYtomate)                      hornear()                     V(s_panListo)                                                                                                         mutex(horno) p(s_mezclar)                        mezclar()  V(s_salar) 
+ cortar()              preparar()               mutex(horno) 
+ V(s_mezclar)     V(s_lechugaYtomate)             hornear()        
+                                                V(s_panListo)
+ p(s_mezclar)                                    mutex(horno)
+   mezclar() 
+  V(s_salar) 
  
  
-p(s_salar) mutex(salero)  salar() V(s_armarMedallones)  mutex(salero) 
+p(s_salar) 
+mutex(salero) 
+salar() 
+V(s_armarMedallones) 
+mutex(salero) 
  
  
-p(s_armarMedallones)   armar() V(s_cocinar) 
+p(s_armarMedallones)   
+armar() V(s_cocinar) 
  
  
 p(s_cocinar) mutex(plancha) cocinar() V(s_medallonesListos)  mutex(plancha) 
